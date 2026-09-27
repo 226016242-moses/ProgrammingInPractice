@@ -1,0 +1,36 @@
+# include <stdio.h>
+
+main ()
+{
+    int totalVotes;
+    int republicans;
+    int democrats;
+    int votesDifference;
+
+    printf("Welcome to the government election\n");
+
+    printf("Enter the total number of votes for republicans\n");
+    scanf("%d" , &republicans);
+
+    printf("Enter the total number of votes for democrats\n");
+    scanf("%d" , &democrats);
+
+    totalVotes = republicans + democrats;
+
+    if (republicans > democrats)
+    {
+        printf("republicans win\n");
+    }
+    else
+    {
+        printf("democrats win\n");
+    }
+
+    votesDifference = republicans - democrats;
+    printf("The difference in votes is: %d\n", votesDifference);
+
+    printf("The total number of votes is: %d\n", totalVotes);
+    printf("the winner is: %s\n by %d\n", (republicans > democrats) ? "republicans" : "democrats", votesDifference);
+
+return 0;
+}

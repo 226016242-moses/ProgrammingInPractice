@@ -6,7 +6,6 @@ int main()
     float housing;
     float transport;
     float tax;
-    float taxRate=0.6;
     float netSalary;
     float grossSalary;
 
@@ -19,12 +18,13 @@ scanf("%f", &housing);
 printf("enter transport allowance: ");
 scanf("%f", &transport);
 
+printf("enter tax: ");
+scanf("%f", &tax);
+
 grossSalary = basicSalary + housing + transport;
-tax = grossSalary * taxRate;
 netSalary = grossSalary - tax;
 
 printf("Gross Salary: %.2f\n", grossSalary);
-printf("Tax: %.2f\n", tax);
 printf("Net Salary: %.2f\n", netSalary);
 
 return 0;

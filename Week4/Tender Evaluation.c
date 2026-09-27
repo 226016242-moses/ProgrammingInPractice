@@ -28,11 +28,13 @@ int main()
 
     if (registeredInput == 0 || documentsCompleteInput == 0) {
         printf("%s\n", supplierName);
+        printf("Status: Disqualified\n");
+        
     } else if (price > budget) {
-        printf("\nSupplier: %s\n", supplierName);
+        printf("%s\n", supplierName);
         printf("Status: Disqualified\n");
     } else {
-        printf("\nSupplier: %s\n", supplierName);
+        printf("%s\n", supplierName);
         printf("Status: Qualified\n");
     }
 
